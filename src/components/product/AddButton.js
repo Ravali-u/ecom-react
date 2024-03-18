@@ -24,17 +24,17 @@ export default function AddButton(props) {
       <div>
         <button
           className="Plusminus-button" 
-          onClick={() => updateCart(props.id, cartItems[props.id] - 1)}
+          onClick={() => updateCart(props.id, cartItems[props.id] + 1)}
         >
-          -
+          +
         </button>
-        <input disabled type="text" className="Txtbox" value={cartItems[props.id]}></input>
+        {/* <input disabled type="text" className="Txtbox" value={cartItems[props.id]}></input>
         <button
           className="Plusminus-button"
           onClick={() => updateCart(props.id, cartItems[props.id] + 1)}
         >
           +
-        </button>
+        </button> */}
       </div>
     );
   }

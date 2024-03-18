@@ -1,4 +1,5 @@
 import React from "react";
+import { AppContext } from "../../context/appContext.js"
 import products from "./products.json";
 import "./Products.css";
 import AddButton from "./AddButton.js";
@@ -25,6 +26,7 @@ export default function Products() {
               <div className="priceTxt">₹{value.price}</div>
               <div className="Product-button">
                 <AddButton id={value.id} />
+                
               </div>
                </div>
           </div>

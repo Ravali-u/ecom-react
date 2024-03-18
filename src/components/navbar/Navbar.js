@@ -27,7 +27,7 @@ export default function Navbar() {
         {myOrders.length > 0 && (
           <Link to={`${PATH}/order`}> Orders({myOrders.length}) </Link>
         )}
-        <Link to={`${PATH}/cart`}> Cart({total}) </Link>
+        {total>0 && <Link to={`${PATH}/cart`}> Cart({total}) </Link>}
         {flag < 2 ? (
           <Link to={`${PATH}/login`}>Login</Link>
         ) : (
