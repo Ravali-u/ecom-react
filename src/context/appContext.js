@@ -6,6 +6,7 @@ export const AppContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
   const [orders, setOrders] = useState([]);
   const [user, setUser] = useState({});
+  const [selectProduct, setSelectedProduct] = useState({})
   const [users, setUsers] = useState([]);
   const [flag, setFlag] = useState(0);
 
@@ -20,6 +21,7 @@ export const AppContextProvider = (props) => {
     users,
     setUsers,
     flag,setFlag,
+    selectProduct, setSelectedProduct
 
   };
   return (
