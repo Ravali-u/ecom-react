@@ -34,8 +34,7 @@ export default function Products() {
               <div className="priceTxt">₹{value.price}</div>
               <div className="Product-button">
                 <AddButton id={value.id} />
-
-              </div>
+               </div>
                </div>
           </div>
         ))}
