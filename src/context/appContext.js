@@ -21,7 +21,8 @@ export const AppContextProvider = (props) => {
     users,
     setUsers,
     flag,setFlag,
-    selectProduct, setSelectedProduct
+    selectProduct, 
+    setSelectedProduct,
 
   };
   return (

@@ -13,7 +13,7 @@ return(
             <div className="Product-details">
                 <h1>
                     {selectedProduct.name}</h1>
-                    <img src={`$(PATH) $ {selectedProduct.imagr}`}
+                    <img src={`$(PATH)${selectedProduct.image}`}
                     alt={selectedProduct.name}/>
                     <p>{selectedProduct.desc}</p>
                     <p>Price:{selectedProduct.price}</p>

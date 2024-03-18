@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useContext, useSate} from "react";
 import { AppContext } from "../../context/appContext.js"
 import products from "./products.json";
 import "./Products.css";
 import AddButton from "./AddButton.js";
-import ShowProduct from './ShowProduct';
+import ShowProduct from './ShowProduct.js';
 import { Link } from "react-router-dom";
 export default function Products() {
   const{ cartItems, setCartItems } = useContext(AppContext)
